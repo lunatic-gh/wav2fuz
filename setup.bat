@@ -5,7 +5,7 @@ python -m venv ".venv"
 
 :: Install Requirements
 echo "Installing Requirements..."
-"./venv/Scripts/pip" install -r "requirements.txt"
+"./.venv/Scripts/pip" install -r "requirements.txt"
 
 echo "Done."
 pause
