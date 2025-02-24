@@ -34,3 +34,6 @@ This tool uses AI locally on your PC to transcribe the text from your wav-files,
 - Why are there .exe-files included in the repo?
   - They are taken from the SSE CreationKit. They are used to A: Generate Lip-Files, and B: Pack those lip-files together with your wav's into a new FUZ.
   - If you don't trust them (Malware etc.), you can get them by downloading the SSE-CreationKit on Steam, and copying these 2 folders from `<Game-Directory>/Tools/LipGen/...` into the script-directory. **THOSE BINARIES ARE 100% REQUIRED. THEY ARE PERFORMING THE GENERATION PART.**
+- It's too slow!
+  - It's the transcription that takes 95% of the time. If you have an NVidia-GPU, it will use your GPU and go faster.
+  - Otherwise, you can try editing the `__convert.py`, and changing `MODEL_NAME = "large-v2"` to `MODEL_NAME = "medium"` - You can also use `tiny` or `base`, but those tend to produce horrible results. But you do you.
