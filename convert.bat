@@ -8,6 +8,6 @@ set args=%args% "%1"
 shift
 goto loop
 :execute
-python "__convert.py"%args%
+".\.venv\Scripts\python" "__convert.py"%args%
 cd %WD%
 pause
