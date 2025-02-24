@@ -17,7 +17,7 @@ This tool uses AI locally on your PC to transcribe the text from your wav-files,
   - ![image](https://github.com/user-attachments/assets/136f36c0-6217-4230-bc37-4ba9c027b2b5)
 - Open that new folder in your file explorer
 - Run the `setup.bat` by double-clicking it (or running `.\setup.bat` in a terminal inside that directory)
-- Done. You can now either run the tool manually in a commandline with `python .\__convert.py <files...>`, or just simply drag & drop all your wav-files you want to convert on top of the included `convert.bat`
+- Done. You can now either run the tool manually in a commandline with `.\.venv\Scripts\python .\__convert.py <files...>`, or just simply drag & drop all your wav-files you want to convert on top of the included `convert.bat`
   - A CMD-Window will show the progress, and after it's done you can find your fuz-files in `script-dir/fuz-output/...`: ![image](https://github.com/user-attachments/assets/4584633f-aa35-4394-bc75-f62a7fba8da1)
 
 
