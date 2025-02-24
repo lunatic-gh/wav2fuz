@@ -1,4 +1,4 @@
-# AudioToText-FUZ
+# WAV2FUZ
 
 This tool allows you to easily batch-convert all your wav-files to fuz-files, as they're required in Skyrim for Dialogue, especially if you want LipSync support.
 
