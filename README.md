@@ -9,6 +9,7 @@ This tool uses AI locally on your PC to transcribe the text from your wav-files,
 
 ## Requirements:
 - Python 3.9+ | I used 3.9.13 for development. AI-Code is known to sometimes break on higher python versions, so if you got any issues with newer versions, try using 3.9
+- FFMPEG - Get it by running `winget install gyan.ffmpeg` in a commandline. If you don't have winget, you have to download & install it manually, and add its `bin` path to your `PATH` environment variable.
 - A Powerful NVidia-GPU (RTX2000+) (Only if you want the transcription to go faster - Otherwise it'll just use your CPU, which just takes longer, but works the same)
   - No, AMD GPU's don't work. I have an AMD-GPU too, and i'm as sad about it as everyone. It's not something i can fix, it's fully up to the torch-developers to finally add proper ROCM-Support. They still claim it's "Not available on Windows", while AMD released their HIP-SDK in Mid-2023.
 ## How to use:
