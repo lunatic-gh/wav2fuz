@@ -130,7 +130,7 @@ os.makedirs(output_dir_fuz, exist_ok=True)
 
 for file in audio_files:
     name = os.path.splitext(os.path.basename(file))[0]
-    text = open(f"{output_dir_text}/{name}.txt", "r").read().replace("\n", "")
+    text = open(f"{output_dir_text}/{name}.txt", "r").read().replace("\n", " ")
     subprocess.run([LIPGEN_BIN, file, text, f"-OutputFileName:{output_dir_audio}/{name}.lip"])
     shutil.copy(file, output_dir_audio)
     subprocess.run([LIPFUZER_BIN, "-s", output_dir_audio, "-d", output_dir_fuz, "-a", "wav", "--norec", "-v", "2"])
