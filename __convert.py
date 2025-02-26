@@ -48,21 +48,11 @@ output_dir_text = "text-output"
 output_dir_audio = "audio-output"
 output_dir_fuz = "fuz-output"
 
-
-def cleanup():
-    try:
-        for f in os.listdir(output_dir_audio):
-            os.remove(f"{output_dir_audio}/{f}")
-    except:
-        pass
-    try:
-        for f in os.listdir(output_dir_fuz):
-            os.remove(f"{output_dir_fuz}/{f}")
-    except:
-        pass
-
-
-cleanup()
+try:
+    for f in os.listdir(output_dir_audio):
+        os.remove(f"{output_dir_audio}/{f}")
+except:
+    pass
 
 audio_files = list(map(lambda path: os.path.expandvars(path.strip()), args))
 
