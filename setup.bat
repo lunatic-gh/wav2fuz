@@ -11,9 +11,9 @@ echo "Done."
 
 :: Remove unnecessary files
 del ".gitignore"
-del "setup.bat"
 del "requirements.txt"
 del "README.md"
+del "setup.bat"
 
 :: Wait for input, then exit
 pause
