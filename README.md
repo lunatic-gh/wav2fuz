@@ -22,9 +22,10 @@ This tool uses AI locally on your PC to transcribe the text from your wav-files,
 
 
 ## Q/A
-- Common Errors:
+- Common Errors/Warnings:
   - "Warning: No lip file found for `<filename>.wav`"
     - The Program could not generate a lip file for your wav, so the fuz-packer could not find one. This is mostly caused by either corrupted or too short wav-files. Make sure your wav-file is 48000khz-Mono, longer than 300ms, and not corrupted. Try with other wav's to check.
+    - Also NOTE: This is just a warning. You should still get a working FUZ-File (as long as your WAV was fine), it will just lack lip movement.
 - Errors not specified above:
   - Open an Issue on this Repository. It worked 100% on my part with the above mentioned things installed.
 - Linux?
