@@ -1,13 +1,8 @@
 @echo off
-set WD=%cd%
-cd "%~dp0"
-set args=
-:loop
-if "%~1"=="" goto execute
-set args=%args% "%~1"
-shift
-goto loop
-:execute
-".\.venv\Scripts\python" "__convert.py"%args%
-cd "%WD%"
+
+set WD=%~dp0
+cd /d "%~dp0"
+".\.venv\Scripts\python" "__convert.py" %*
+cd /d "%WD%"
+
 pause
